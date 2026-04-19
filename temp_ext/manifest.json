@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Full Post Saver",
+  "version": "84.0.0",
+  "description": "v84: Remove second scroll, remove HTML fallback, safe CSS 350KB, remove invisible elements.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "pageCapture",
+    "downloads",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://*.fbcdn.net/*",
+    "https://*.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Save this Facebook post",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
